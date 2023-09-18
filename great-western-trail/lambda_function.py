@@ -35,5 +35,8 @@ def lambda_handler(event, context):
     response += '以上'
     return {
         'statusCode': 200,
+        'headers': {
+            'Content-type': 'application/json;charset=UTF-8'
+        },
         'body': response
     }
